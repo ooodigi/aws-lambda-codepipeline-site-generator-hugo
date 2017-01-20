@@ -33,6 +33,9 @@ fi
 if [[ "0.17" == $hugo_version ]] ; then
   download_url="${download_url}v0.17/hugo_0.17_Linux-64bit.tar.gz"
 fi
+if [[ "0.18.1" == $hugo_version ]] ; then
+  download_url="${download_url}v0.18.1/hugo_0.18.1_Linux-64bit.tar.gz"
+fi
 (
  cd $tmpdir
  wget -qO hugo.tar.gz $download_url
